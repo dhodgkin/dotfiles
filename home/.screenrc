@@ -1,0 +1,18 @@
+startup_message off
+
+escape /
+defscrollback 1024
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %H ][%-Lw%{= kw}%50> %n*%f %t%{= kG}%+Lw%< %{= kG}]%-=[%D %m/%d/%y | %C:%s %A]'
+
+#screen -t irssi   0 irssi
+screen -t shell1  0
+#screen -t shell2  1 
+#screen -t shell3  2
+#screen -t mc      3 mc
+
+shell   zsh
+
+bindkey -k k3 prev
+bindkey -k k4 next
